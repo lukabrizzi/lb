@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/lb/static/css/main.d98932d9.chunk.css",
+    "main.js": "/lb/static/js/main.96e118e3.chunk.js",
+    "main.js.map": "/lb/static/js/main.96e118e3.chunk.js.map",
+    "runtime-main.js": "/lb/static/js/runtime-main.ef722bb3.js",
+    "runtime-main.js.map": "/lb/static/js/runtime-main.ef722bb3.js.map",
+    "static/css/2.3089e125.chunk.css": "/lb/static/css/2.3089e125.chunk.css",
+    "static/js/2.5d535639.chunk.js": "/lb/static/js/2.5d535639.chunk.js",
+    "static/js/2.5d535639.chunk.js.map": "/lb/static/js/2.5d535639.chunk.js.map",
+    "static/js/3.904792e5.chunk.js": "/lb/static/js/3.904792e5.chunk.js",
+    "static/js/3.904792e5.chunk.js.map": "/lb/static/js/3.904792e5.chunk.js.map",
+    "index.html": "/lb/index.html",
+    "static/css/2.3089e125.chunk.css.map": "/lb/static/css/2.3089e125.chunk.css.map",
+    "static/css/main.d98932d9.chunk.css.map": "/lb/static/css/main.d98932d9.chunk.css.map",
+    "static/js/2.5d535639.chunk.js.LICENSE.txt": "/lb/static/js/2.5d535639.chunk.js.LICENSE.txt",
+    "static/media/CV Luka Brizzi.8a2d43b5.pdf": "/lb/static/media/CV Luka Brizzi.8a2d43b5.pdf",
+    "static/media/cv.38bdf5c4.png": "/lb/static/media/cv.38bdf5c4.png",
+    "static/media/SignIn.scss": "/lb/static/media/fondoSignIn.3ee81901.png",
+    "static/media/header.f944fc50.png": "/lb/static/media/header.f944fc50.png",
+    "static/media/logoSignIn.5132e73d.png": "/lb/static/media/logoSignIn.5132e73d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef722bb3.js",
+    "static/css/2.3089e125.chunk.css",
+    "static/js/2.5d535639.chunk.js",
+    "static/css/main.d98932d9.chunk.css",
+    "static/js/main.96e118e3.chunk.js"
+  ]
+}
