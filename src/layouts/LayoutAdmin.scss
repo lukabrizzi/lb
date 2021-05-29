@@ -10,6 +10,7 @@
         min-height: 100%;
         height: auto;
         width: auto;
+
         img {
             width: 100%;
             height: auto;
@@ -17,8 +18,6 @@
     }
 
     &__content {
-        // padding-top: 30px;
-        // min-height: calc(100vh - 65px);
         background-color: #C6C6C6;
         padding: 33px 100px 100px 100px;
     }

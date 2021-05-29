@@ -6,7 +6,6 @@ import { DownloadOutlined, TwitterOutlined, InstagramOutlined, LinkedinOutlined,
 
 import header from '../assets/img/png/presentacion.png'
 
-// import cvImg from '../../assets/img/png/cv.png'
 import cvImg from '../assets/img/png/cv.png'
 import cvFileEsp from '../assets/pdf/CV Luka Brizzi español.pdf'
 import cvFileIng from '../assets/pdf/CV Luka Brizzi ingles.pdf'
@@ -81,15 +80,8 @@ export default function LayoutAdmin(props) {
 
     return (
         <Layout>
-            {/* <Content
-                className="layoutAdmin__content"
-                style={{ paddingLeft: 30, paddingRight: 30 }}
-            > */}
-            <Content
-                className="layoutAdmin__content"
-                style={{ paddingLeft: 40, paddingRight: 40 }}
-            >
-                <FadeInSection key={1}>
+            <Content className="layoutAdmin__content" style={{ paddingLeft: 60, paddingRight: 60 }}>
+                <FadeInSection>
                     <div className="layoutAdmin__header" >
                         <img
                             src={header}
@@ -99,13 +91,9 @@ export default function LayoutAdmin(props) {
                 </FadeInSection>
             </Content>
 
-            <Content
-                className="layoutAdmin__content"
-                style={{ paddingLeft: 40, paddingRight: 40 }}
-            >
-                <FadeInSection key={2}>
+            <Content className="layoutAdmin__content" style={{ paddingLeft: 60, paddingRight: 60 }}>
+                <FadeInSection>
                     <Row gutter={16}>
-                        {/* <Col span={12}> */}
                         <Card
                             cover={
                                 <img
@@ -126,14 +114,10 @@ export default function LayoutAdmin(props) {
                     </Row>
                 </FadeInSection>
             </Content>
-            {/* </Col> */}
-            <Content
-                className="layoutAdmin__content"
-                style={{ paddingLeft: 40, paddingRight: 40 }}
-            >
-                <FadeInSection key={3}>
+
+            <Content className="layoutAdmin__content" style={{ paddingLeft: 60, paddingRight: 60 }}>
+                <FadeInSection>
                     <Row gutter={16}>
-                        {/* <Col span={12}> */}
                         <Card
                             cover={
                                 <img
@@ -148,23 +132,17 @@ export default function LayoutAdmin(props) {
                             ]}
                         >
                             <Meta
-                                title="Conocé un poco más de mi en mis redes sociales"
+                                title="Redes sociales"
                                 description=""
                             />
                         </Card>
-                        {/* </Col> */}
                     </Row>
                 </FadeInSection>
             </Content>
 
-
-            <Content
-                className="layoutAdmin__content"
-                style={{ paddingLeft: 30, paddingRight: 30 }}
-            >
-                <FadeInSection key={4}>
+            <Content className="layoutAdmin__content" style={{ paddingLeft: 60, paddingRight: 60 }}>
+                <FadeInSection>
                     <Row gutter={16}>
-                        {/* <Col span={12}> */}
                         <Card
                             cover={
                                 <img
@@ -177,22 +155,17 @@ export default function LayoutAdmin(props) {
                             ]}
                         >
                             <Meta
-                                title="Trabajo actual de desarrollo"
+                                title="Web developer"
                                 description="Kerde Labs"
                             />
                         </Card>
-                        {/* </Col> */}
                     </Row>
                 </FadeInSection>
             </Content>
 
-            <Content
-                className="layoutAdmin__content"
-                style={{ paddingLeft: 40, paddingRight: 40 }}
-            >
-                <FadeInSection key={5}>
+            <Content className="layoutAdmin__content" style={{ paddingLeft: 60, paddingRight: 60 }}>
+                <FadeInSection>
                     <Row gutter={16}>
-                        {/* <Col span={12}> */}
                         <Card
                             cover={
                                 <img
@@ -207,15 +180,15 @@ export default function LayoutAdmin(props) {
                             ]}
                         >
                             <Meta
-                                title="Trabajo actual de marketing y diseño grafico"
+                                title="Community manager"
                                 description="Dijon - American Cars - EG Ferreteria"
                             />
                         </Card>
-                        {/* </Col> */}
                     </Row>
                 </FadeInSection>
             </Content>
-            <FadeInSection key={6}>
+
+            <FadeInSection>
                 <Carousel autoplay>
                     <div className="carrusel">
                         <img
