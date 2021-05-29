@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch, Link } from 'react-router-dom';
-import { Layout, Card, Col, Row, Avatar, Carousel } from 'antd';
+import { Layout, Card, Col, Row, Avatar, Carousel, notification } from 'antd';
 import 'antd/dist/antd.css';
 import { DownloadOutlined, TwitterOutlined, InstagramOutlined, LinkedinOutlined, WhatsAppOutlined, CodeOutlined } from '@ant-design/icons';
 
@@ -61,8 +61,16 @@ export default function LayoutAdmin(props) {
         window.open("https://open.spotify.com/user/luukab08");
     }
 
+    function Test() {
+        notification["warning"]({
+            message: 'Todavia no esta disponible el link'
+        });
+    }
+
     function Discord() {
-        window.open("https://open.spotify.com/user/luukab08");
+        notification["warning"]({
+            message: 'Todavia no esta disponible el link'
+        });
     }
 
     function FadeInSection(props) {
@@ -205,6 +213,7 @@ export default function LayoutAdmin(props) {
                     </div>
                     <div className="carrusel">
                         <img
+                            onClick={Test}
                             alt="example"
                             src={test}
                         />
@@ -218,7 +227,7 @@ export default function LayoutAdmin(props) {
                     </div>
                 </Carousel>
             </FadeInSection>
-            <Footer className="layoutAdmin__footer" style={{ textAlign: 'center' }}>Made with React ©2021 Created by Luka Brizzi
+            <Footer className="layoutAdmin__footer" style={{ textAlign: 'center' }}>Made with React ©2021 Created by Luka Brizzi a manopla
                 <div className="layoutAdmin__wpp" style={{ textAlign: 'right' }}>
                     <Avatar onClick={WhatsApp}
                         style={{
