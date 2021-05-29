@@ -13,6 +13,8 @@ import imgSillon from '../assets/img/png/labu.png'
 import kerde from '../assets/img/png/kerde.png'
 import marketing from '../assets/img/png/marketing.png'
 import spotify from '../assets/img/png/spotify.png'
+import test from '../assets/img/png/test.png'
+import discord from '../assets/img/png/discord.png'
 
 
 import './LayoutAdmin.scss'
@@ -56,6 +58,10 @@ export default function LayoutAdmin(props) {
     }
 
     function Spotify() {
+        window.open("https://open.spotify.com/user/luukab08");
+    }
+
+    function Discord() {
         window.open("https://open.spotify.com/user/luukab08");
     }
 
@@ -200,19 +206,14 @@ export default function LayoutAdmin(props) {
                     <div className="carrusel">
                         <img
                             alt="example"
-                            src={spotify}
+                            src={test}
                         />
                     </div>
                     <div className="carrusel">
                         <img
+                            onClick={Discord}
                             alt="example"
-                            src={spotify}
-                        />
-                    </div>
-                    <div className="carrusel">
-                        <img
-                            alt="example"
-                            src={spotify}
+                            src={discord}
                         />
                     </div>
                 </Carousel>
