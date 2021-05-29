@@ -129,9 +129,9 @@ export default function LayoutAdmin(props) {
                                     />
                                 }
                                 actions={[
-                                    <Link onClick={Instagram}><InstagramOutlined /> Instagram</Link>,
-                                    <Link onClick={Twitter}><TwitterOutlined /> Twitter</Link>,
-                                    <Link onClick={LinkedIn}><LinkedinOutlined /> LinkedIn</Link>
+                                    <Link onClick={Instagram}><InstagramOutlined /></Link>,
+                                    <Link onClick={Twitter}><TwitterOutlined /></Link>,
+                                    <Link onClick={LinkedIn}><LinkedinOutlined /></Link>
                                 ]}
                             >
                                 <Meta
@@ -179,8 +179,8 @@ export default function LayoutAdmin(props) {
                                 }
                                 actions={[
                                     <Link onClick={Dijon}><InstagramOutlined /> Dijon</Link>,
-                                    <Link onClick={American}><InstagramOutlined /> American Cars</Link>,
-                                    <Link onClick={Ferre}><InstagramOutlined /> EG Ferreteria</Link>
+                                    <Link onClick={American}><InstagramOutlined /> ACars</Link>,
+                                    <Link onClick={Ferre}><InstagramOutlined /> EGF</Link>
                                 ]}
                             >
                                 <Meta
