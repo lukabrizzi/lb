@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import { Layout } from 'antd';
 import 'antd/dist/antd.css';
 
-import './LayoutBasic.scss'
+// import './LayoutBasic.scss'
 
 export default function LayoutBasic(props) {
     const { routes } = props;
