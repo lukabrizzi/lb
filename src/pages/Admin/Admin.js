@@ -3,7 +3,7 @@ import { Card } from 'antd';
 import { Link } from 'react-router-dom';
 // import { EditOutlined, EllipsisOutlined, SettingOutlined, DownloadOutlined } from '@ant-design/icons';
 import cvImg from '../../assets/img/png/cv.png'
-import cvFile from '../../assets/pdf/CV Luka Brizzi.pdf'
+import cvFile from '../../assets/pdf/CV Luka Brizzi español.pdf'
 const { Meta } = Card;
 
 export default function Admin() {

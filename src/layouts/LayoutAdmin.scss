@@ -3,30 +3,20 @@
 .layoutAdmin {
     transition: margin-left 0,2s;
 
-
     &__header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        // display: flex;
-        padding: 0;
-        height: 274px;
-        background-color: #ffffff;
-
-        &-img {
-            // text-align: center;
-            display: flex;
-            // width: 100%;
-            height: auto;
-            width: auto;
-        }
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        min-height: 100%;
+        height: auto;
+        width: auto;
     }
 
     &__content {
+        padding-top: 30px;
         min-height: calc(100vh - 65px);
-        padding: 33px 100px 100px 100px;
         background-color: #C6C6C6;
+        padding: 33px 100px 100px 100px;
     }
 
     &__footer {
@@ -34,4 +24,40 @@
         padding: 20px;
         text-align: 'center';
     }
+
+    &__wpp {
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        text-align:center;
+        font-size:30px;
+        z-index:100;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    // &__carrusel {
+    //     max-height: calc(100vh - 400px);
+    //     padding: 0 100px 0 0;
+    // }
+}
+
+.transition {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transition: width 2s, height 2s, margin 2s;
+    margin: 50px auto 0;
+}
+.transition:hover{
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
 }
