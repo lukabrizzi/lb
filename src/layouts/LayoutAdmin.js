@@ -81,118 +81,141 @@ export default function LayoutAdmin(props) {
 
     return (
         <Layout>
-            <Content
+            {/* <Content
                 className="layoutAdmin__content"
                 style={{ paddingLeft: 30, paddingRight: 30 }}
+            > */}
+            <Content
+                className="layoutAdmin__content"
+                style={{ paddingLeft: 40, paddingRight: 40 }}
             >
-                <Content
-                    className="layoutAdmin__content"
-                    style={{ paddingLeft: 10, paddingRight: 10 }}
-                >
-                    <FadeInSection key={1}>
-                        <div className="layoutAdmin__header" >
-                            <img
-                                src={header}
-                                alt="Luka Brizzi"
-                            />
-                        </div >
-                    </FadeInSection>
-                </Content>
-                <FadeInSection key={2}>
-                    <Row gutter={16}>
-                        <Col span={12}>
-                            <Card
-                                cover={
-                                    <img
-                                        alt="example"
-                                        src={cvImg}
-                                    />
-                                }
-                                actions={[
-                                    <Link to={cvFileEsp} target="_blank" download><DownloadOutlined /> Spanish</Link>,
-                                    <Link to={cvFileIng} target="_blank" download><DownloadOutlined /> English</Link>
-                                ]}
-                            >
-                                <Meta
-                                    title="Mi Cv"
-                                    description=""
-                                />
-                            </Card>
-                        </Col>
-
-                        <Col span={12}>
-                            <Card
-                                cover={
-                                    <img
-                                        alt="example"
-                                        src={imgSillon}
-                                    />
-                                }
-                                actions={[
-                                    <Link onClick={Instagram}><InstagramOutlined /></Link>,
-                                    <Link onClick={Twitter}><TwitterOutlined /></Link>,
-                                    <Link onClick={LinkedIn}><LinkedinOutlined /></Link>
-                                ]}
-                            >
-                                <Meta
-                                    title="Conocé un poco más de mi en mis redes sociales"
-                                    description=""
-                                />
-                            </Card>
-                        </Col>
-                    </Row>
+                <FadeInSection key={1}>
+                    <div className="layoutAdmin__header" >
+                        <img
+                            src={header}
+                            alt="Luka Brizzi"
+                        />
+                    </div >
                 </FadeInSection>
             </Content>
 
             <Content
                 className="layoutAdmin__content"
-                style={{ paddingLeft: 30, paddingRight: 30 }}
+                style={{ paddingLeft: 40, paddingRight: 40 }}
+            >
+                <FadeInSection key={2}>
+                    <Row gutter={16}>
+                        {/* <Col span={12}> */}
+                        <Card
+                            cover={
+                                <img
+                                    alt="example"
+                                    src={cvImg}
+                                />
+                            }
+                            actions={[
+                                <Link to={cvFileEsp} target="_blank" download><DownloadOutlined /> Spanish</Link>,
+                                <Link to={cvFileIng} target="_blank" download><DownloadOutlined /> English</Link>
+                            ]}
+                        >
+                            <Meta
+                                title="Mi Cv"
+                                description=""
+                            />
+                        </Card>
+                    </Row>
+                </FadeInSection>
+            </Content>
+            {/* </Col> */}
+            <Content
+                className="layoutAdmin__content"
+                style={{ paddingLeft: 40, paddingRight: 40 }}
             >
                 <FadeInSection key={3}>
                     <Row gutter={16}>
-                        <Col span={12}>
-                            <Card
-                                cover={
-                                    <img
-                                        alt="example"
-                                        src={kerde}
-                                    />
-                                }
-                                actions={[
-                                    <Link onClick={Kerde}>Kerde Labs <CodeOutlined /></Link>
-                                ]}
-                            >
-                                <Meta
-                                    title="Trabajo actual de desarrollo"
-                                    description="Kerde Labs"
+                        {/* <Col span={12}> */}
+                        <Card
+                            cover={
+                                <img
+                                    alt="example"
+                                    src={imgSillon}
                                 />
-                            </Card>
-                        </Col>
-
-                        <Col span={12}>
-                            <Card
-                                cover={
-                                    <img
-                                        alt="example"
-                                        src={marketing}
-                                    />
-                                }
-                                actions={[
-                                    <Link onClick={Dijon}><InstagramOutlined /> Dijon</Link>,
-                                    <Link onClick={American}><InstagramOutlined /> ACars</Link>,
-                                    <Link onClick={Ferre}><InstagramOutlined /> EGF</Link>
-                                ]}
-                            >
-                                <Meta
-                                    title="Trabajo actual de marketing y diseño grafico"
-                                    description="Dijon - American Cars - EG Ferreteria"
-                                />
-                            </Card>
-                        </Col>
+                            }
+                            actions={[
+                                <Link onClick={Instagram}><InstagramOutlined /></Link>,
+                                <Link onClick={Twitter}><TwitterOutlined /></Link>,
+                                <Link onClick={LinkedIn}><LinkedinOutlined /></Link>
+                            ]}
+                        >
+                            <Meta
+                                title="Conocé un poco más de mi en mis redes sociales"
+                                description=""
+                            />
+                        </Card>
+                        {/* </Col> */}
                     </Row>
                 </FadeInSection>
             </Content>
-            <FadeInSection key={4}>
+
+
+            <Content
+                className="layoutAdmin__content"
+                style={{ paddingLeft: 30, paddingRight: 30 }}
+            >
+                <FadeInSection key={4}>
+                    <Row gutter={16}>
+                        {/* <Col span={12}> */}
+                        <Card
+                            cover={
+                                <img
+                                    alt="example"
+                                    src={kerde}
+                                />
+                            }
+                            actions={[
+                                <Link onClick={Kerde}>Kerde Labs <CodeOutlined /></Link>
+                            ]}
+                        >
+                            <Meta
+                                title="Trabajo actual de desarrollo"
+                                description="Kerde Labs"
+                            />
+                        </Card>
+                        {/* </Col> */}
+                    </Row>
+                </FadeInSection>
+            </Content>
+
+            <Content
+                className="layoutAdmin__content"
+                style={{ paddingLeft: 40, paddingRight: 40 }}
+            >
+                <FadeInSection key={5}>
+                    <Row gutter={16}>
+                        {/* <Col span={12}> */}
+                        <Card
+                            cover={
+                                <img
+                                    alt="example"
+                                    src={marketing}
+                                />
+                            }
+                            actions={[
+                                <Link onClick={Dijon}><InstagramOutlined /> Dijon</Link>,
+                                <Link onClick={American}><InstagramOutlined /> ACars</Link>,
+                                <Link onClick={Ferre}><InstagramOutlined /> EGF</Link>
+                            ]}
+                        >
+                            <Meta
+                                title="Trabajo actual de marketing y diseño grafico"
+                                description="Dijon - American Cars - EG Ferreteria"
+                            />
+                        </Card>
+                        {/* </Col> */}
+                    </Row>
+                </FadeInSection>
+            </Content>
+            <FadeInSection key={6}>
                 <Carousel autoplay>
                     <div className="carrusel">
                         <img
