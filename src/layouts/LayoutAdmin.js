@@ -116,8 +116,8 @@ export default function LayoutAdmin(props) {
                                 />
                             }
                             actions={[
-                                <Link to={cvFileEsp} target="_blank" download><DownloadOutlined /> Spanish</Link>,
-                                <Link to={cvFileIng} target="_blank" download><DownloadOutlined /> English</Link>
+                                <Link to={cvFileEsp} target="_blank" download><DownloadOutlined /> Español</Link>,
+                                <Link to={cvFileIng} target="_blank" download><DownloadOutlined /> Ingles</Link>
                             ]}
                         >
                             <Meta
@@ -169,7 +169,7 @@ export default function LayoutAdmin(props) {
                             ]}
                         >
                             <Meta
-                                title="Web developer"
+                                title="Analista IT"
                                 description="Kerde Labs"
                             />
                         </Card>
@@ -202,7 +202,7 @@ export default function LayoutAdmin(props) {
                 </FadeInSection>
             </Content>
 
-            <FadeInSection>
+            {/* <FadeInSection>
                 <Carousel autoplay>
                     <div className="carrusel">
                         <img
@@ -226,7 +226,7 @@ export default function LayoutAdmin(props) {
                         />
                     </div>
                 </Carousel>
-            </FadeInSection>
+            </FadeInSection> */}
             <Footer className="layoutAdmin__footer" style={{ textAlign: 'center' }}>Made with React ©2021 Created by Luka Brizzi a manopla
                 <div className="layoutAdmin__wpp" style={{ textAlign: 'right' }}>
                     <Avatar onClick={WhatsApp}
