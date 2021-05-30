@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/lb/static/css/main.b9ed9cb0.chunk.css",
-    "main.js": "/lb/static/js/main.f496f713.chunk.js",
-    "main.js.map": "/lb/static/js/main.f496f713.chunk.js.map",
-    "runtime-main.js": "/lb/static/js/runtime-main.c303243d.js",
-    "runtime-main.js.map": "/lb/static/js/runtime-main.c303243d.js.map",
+    "main.js": "/lb/static/js/main.ba5e19cc.chunk.js",
+    "main.js.map": "/lb/static/js/main.ba5e19cc.chunk.js.map",
+    "runtime-main.js": "/lb/static/js/runtime-main.754ff78b.js",
+    "runtime-main.js.map": "/lb/static/js/runtime-main.754ff78b.js.map",
     "static/css/2.3089e125.chunk.css": "/lb/static/css/2.3089e125.chunk.css",
-    "static/js/2.5e6e6fb1.chunk.js": "/lb/static/js/2.5e6e6fb1.chunk.js",
-    "static/js/2.5e6e6fb1.chunk.js.map": "/lb/static/js/2.5e6e6fb1.chunk.js.map",
-    "static/js/3.5cae5a91.chunk.js": "/lb/static/js/3.5cae5a91.chunk.js",
-    "static/js/3.5cae5a91.chunk.js.map": "/lb/static/js/3.5cae5a91.chunk.js.map",
+    "static/js/2.c3ffbb27.chunk.js": "/lb/static/js/2.c3ffbb27.chunk.js",
+    "static/js/2.c3ffbb27.chunk.js.map": "/lb/static/js/2.c3ffbb27.chunk.js.map",
+    "static/js/3.c6dc4c34.chunk.js": "/lb/static/js/3.c6dc4c34.chunk.js",
+    "static/js/3.c6dc4c34.chunk.js.map": "/lb/static/js/3.c6dc4c34.chunk.js.map",
     "index.html": "/lb/index.html",
     "static/css/2.3089e125.chunk.css.map": "/lb/static/css/2.3089e125.chunk.css.map",
     "static/css/main.b9ed9cb0.chunk.css.map": "/lb/static/css/main.b9ed9cb0.chunk.css.map",
-    "static/js/2.5e6e6fb1.chunk.js.LICENSE.txt": "/lb/static/js/2.5e6e6fb1.chunk.js.LICENSE.txt",
+    "static/js/2.c3ffbb27.chunk.js.LICENSE.txt": "/lb/static/js/2.c3ffbb27.chunk.js.LICENSE.txt",
     "static/media/CV Luka Brizzi español.d4c16186.pdf": "/lb/static/media/CV Luka Brizzi español.d4c16186.pdf",
     "static/media/CV Luka Brizzi ingles.d4c16186.pdf": "/lb/static/media/CV Luka Brizzi ingles.d4c16186.pdf",
     "static/media/cv.667eb680.png": "/lb/static/media/cv.667eb680.png",
@@ -28,10 +28,10 @@
     "static/media/test.603e3235.png": "/lb/static/media/test.603e3235.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.c303243d.js",
+    "static/js/runtime-main.754ff78b.js",
     "static/css/2.3089e125.chunk.css",
-    "static/js/2.5e6e6fb1.chunk.js",
+    "static/js/2.c3ffbb27.chunk.js",
     "static/css/main.b9ed9cb0.chunk.css",
-    "static/js/main.f496f713.chunk.js"
+    "static/js/main.ba5e19cc.chunk.js"
   ]
 }
