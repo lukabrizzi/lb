@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/lb/static/css/main.b9ed9cb0.chunk.css",
-    "main.js": "/lb/static/js/main.84e5a273.chunk.js",
-    "main.js.map": "/lb/static/js/main.84e5a273.chunk.js.map",
-    "runtime-main.js": "/lb/static/js/runtime-main.0315d378.js",
-    "runtime-main.js.map": "/lb/static/js/runtime-main.0315d378.js.map",
+    "main.js": "/lb/static/js/main.7cd88a7a.chunk.js",
+    "main.js.map": "/lb/static/js/main.7cd88a7a.chunk.js.map",
+    "runtime-main.js": "/lb/static/js/runtime-main.a4e3ca85.js",
+    "runtime-main.js.map": "/lb/static/js/runtime-main.a4e3ca85.js.map",
     "static/css/2.3089e125.chunk.css": "/lb/static/css/2.3089e125.chunk.css",
-    "static/js/2.c26953f4.chunk.js": "/lb/static/js/2.c26953f4.chunk.js",
-    "static/js/2.c26953f4.chunk.js.map": "/lb/static/js/2.c26953f4.chunk.js.map",
-    "static/js/3.fcd97d05.chunk.js": "/lb/static/js/3.fcd97d05.chunk.js",
-    "static/js/3.fcd97d05.chunk.js.map": "/lb/static/js/3.fcd97d05.chunk.js.map",
+    "static/js/2.70dc2196.chunk.js": "/lb/static/js/2.70dc2196.chunk.js",
+    "static/js/2.70dc2196.chunk.js.map": "/lb/static/js/2.70dc2196.chunk.js.map",
+    "static/js/3.b56dfa1f.chunk.js": "/lb/static/js/3.b56dfa1f.chunk.js",
+    "static/js/3.b56dfa1f.chunk.js.map": "/lb/static/js/3.b56dfa1f.chunk.js.map",
     "index.html": "/lb/index.html",
     "static/css/2.3089e125.chunk.css.map": "/lb/static/css/2.3089e125.chunk.css.map",
     "static/css/main.b9ed9cb0.chunk.css.map": "/lb/static/css/main.b9ed9cb0.chunk.css.map",
-    "static/js/2.c26953f4.chunk.js.LICENSE.txt": "/lb/static/js/2.c26953f4.chunk.js.LICENSE.txt",
+    "static/js/2.70dc2196.chunk.js.LICENSE.txt": "/lb/static/js/2.70dc2196.chunk.js.LICENSE.txt",
     "static/media/CV Luka Brizzi español.d4c16186.pdf": "/lb/static/media/CV Luka Brizzi español.d4c16186.pdf",
     "static/media/CV Luka Brizzi ingles.d4c16186.pdf": "/lb/static/media/CV Luka Brizzi ingles.d4c16186.pdf",
     "static/media/cv.667eb680.png": "/lb/static/media/cv.667eb680.png",
@@ -23,15 +23,15 @@
     "static/media/labu.fd19c689.png": "/lb/static/media/labu.fd19c689.png",
     "static/media/logoSignIn.5132e73d.png": "/lb/static/media/logoSignIn.5132e73d.png",
     "static/media/marketing.78beab8a.png": "/lb/static/media/marketing.78beab8a.png",
-    "static/media/presentacion.6805c60d.png": "/lb/static/media/presentacion.6805c60d.png",
+    "static/media/presentacion.2597d33f.png": "/lb/static/media/presentacion.2597d33f.png",
     "static/media/spotify.8b7837e1.png": "/lb/static/media/spotify.8b7837e1.png",
     "static/media/test.603e3235.png": "/lb/static/media/test.603e3235.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.0315d378.js",
+    "static/js/runtime-main.a4e3ca85.js",
     "static/css/2.3089e125.chunk.css",
-    "static/js/2.c26953f4.chunk.js",
+    "static/js/2.70dc2196.chunk.js",
     "static/css/main.b9ed9cb0.chunk.css",
-    "static/js/main.84e5a273.chunk.js"
+    "static/js/main.7cd88a7a.chunk.js"
   ]
 }
