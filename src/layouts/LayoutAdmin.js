@@ -1,4 +1,5 @@
 import React from 'react';
+import { MediaQuery, useMediaQuery } from 'react-responsive';
 import { Route, Switch, Link } from 'react-router-dom';
 import { Layout, Card, Col, Row, Avatar, Carousel, notification } from 'antd';
 import 'antd/dist/antd.css';
@@ -22,6 +23,9 @@ import './LayoutAdmin.scss'
 export default function LayoutAdmin(props) {
     const { Content, Footer } = Layout;
     const { Meta } = Card;
+
+    const pc = useMediaQuery({ query: '(min-device-width: 1224px)' })
+    const phone = useMediaQuery({ query: '(max-width: 1224px)' })
 
     const avatarColor = '#25d366';
 
@@ -92,6 +96,16 @@ export default function LayoutAdmin(props) {
         );
     }
 
+    const Mobile = ({ children }) => {
+        const phone = useMediaQuery({ maxWidth: 767 })
+        return phone ? children : null
+    }
+
+    const Desktop = ({ children }) => {
+        const desktop = useMediaQuery({ minWidth: 767 })
+        return desktop ? children : null
+    }
+
     return (
         <Layout>
             <Content className="layoutAdmin__content" style={{ paddingLeft: 60, paddingRight: 60 }}>
@@ -104,131 +118,224 @@ export default function LayoutAdmin(props) {
                     </div >
                 </FadeInSection>
             </Content>
-
-            <Content className="layoutAdmin__content" style={{ paddingLeft: 60, paddingRight: 60 }}>
-                <FadeInSection>
-                    <Row gutter={16}>
-                        <Card
-                            cover={
-                                <img
-                                    alt="example"
-                                    src={cvImg}
+            <Mobile>
+                <Content className="layoutAdmin__content" style={{ paddingLeft: 60, paddingRight: 60 }}>
+                    <FadeInSection>
+                        <Row gutter={16}>
+                            <Card
+                                cover={
+                                    <img
+                                        alt="example"
+                                        src={cvImg}
+                                    />
+                                }
+                                actions={[
+                                    <Link to={cvFileEsp} target="_blank" download><DownloadOutlined /> Español</Link>,
+                                    <Link to={cvFileIng} target="_blank" download><DownloadOutlined /> Ingles</Link>
+                                ]}
+                            >
+                                <Meta
+                                    title="Mi Cv"
+                                    description=""
                                 />
-                            }
-                            actions={[
-                                <Link to={cvFileEsp} target="_blank" download><DownloadOutlined /> Español</Link>,
-                                <Link to={cvFileIng} target="_blank" download><DownloadOutlined /> Ingles</Link>
-                            ]}
-                        >
-                            <Meta
-                                title="Mi Cv"
-                                description=""
-                            />
-                        </Card>
-                    </Row>
-                </FadeInSection>
-            </Content>
+                            </Card>
+                        </Row>
+                    </FadeInSection>
+                </Content>
 
-            <Content className="layoutAdmin__content" style={{ paddingLeft: 60, paddingRight: 60 }}>
-                <FadeInSection>
-                    <Row gutter={16}>
-                        <Card
-                            cover={
-                                <img
-                                    alt="example"
-                                    src={imgSillon}
+                <Content className="layoutAdmin__content" style={{ paddingLeft: 60, paddingRight: 60 }}>
+                    <FadeInSection>
+                        <Row gutter={16}>
+                            <Card
+                                cover={
+                                    <img
+                                        alt="example"
+                                        src={imgSillon}
+                                    />
+                                }
+                                actions={[
+                                    <Link onClick={Instagram}><InstagramOutlined /></Link>,
+                                    <Link onClick={Twitter}><TwitterOutlined /></Link>,
+                                    <Link onClick={LinkedIn}><LinkedinOutlined /></Link>
+                                ]}
+                            >
+                                <Meta
+                                    title="Redes sociales"
+                                    description=""
                                 />
-                            }
-                            actions={[
-                                <Link onClick={Instagram}><InstagramOutlined /></Link>,
-                                <Link onClick={Twitter}><TwitterOutlined /></Link>,
-                                <Link onClick={LinkedIn}><LinkedinOutlined /></Link>
-                            ]}
-                        >
-                            <Meta
-                                title="Redes sociales"
-                                description=""
-                            />
-                        </Card>
-                    </Row>
-                </FadeInSection>
-            </Content>
+                            </Card>
+                        </Row>
+                    </FadeInSection>
+                </Content>
 
-            <Content className="layoutAdmin__content" style={{ paddingLeft: 60, paddingRight: 60 }}>
-                <FadeInSection>
-                    <Row gutter={16}>
-                        <Card
-                            cover={
-                                <img
-                                    alt="example"
-                                    src={kerde}
+                <Content className="layoutAdmin__content" style={{ paddingLeft: 60, paddingRight: 60 }}>
+                    <FadeInSection>
+                        <Row gutter={16}>
+                            <Card
+                                cover={
+                                    <img
+                                        alt="example"
+                                        src={kerde}
+                                    />
+                                }
+                                actions={[
+                                    <Link onClick={Kerde}>Kerde Labs <CodeOutlined /></Link>
+                                ]}
+                            >
+                                <Meta
+                                    title="Analista IT"
+                                    description="Kerde Labs"
                                 />
-                            }
-                            actions={[
-                                <Link onClick={Kerde}>Kerde Labs <CodeOutlined /></Link>
-                            ]}
-                        >
-                            <Meta
-                                title="Analista IT"
-                                description="Kerde Labs"
-                            />
-                        </Card>
-                    </Row>
-                </FadeInSection>
-            </Content>
+                            </Card>
+                        </Row>
+                    </FadeInSection>
+                </Content>
 
-            <Content className="layoutAdmin__content" style={{ paddingLeft: 60, paddingRight: 60 }}>
-                <FadeInSection>
-                    <Row gutter={16}>
-                        <Card
-                            cover={
-                                <img
-                                    alt="example"
-                                    src={marketing}
+                <Content className="layoutAdmin__content" style={{ paddingLeft: 60, paddingRight: 60 }}>
+                    <FadeInSection>
+                        <Row gutter={16}>
+                            <Card
+                                cover={
+                                    <img
+                                        alt="example"
+                                        src={marketing}
+                                    />
+                                }
+                                actions={[
+                                    <Link onClick={Dijon}><InstagramOutlined /> Dijon</Link>,
+                                    <Link onClick={American}><InstagramOutlined /> ACars</Link>,
+                                    <Link onClick={Ferre}><InstagramOutlined /> EGF</Link>
+                                ]}
+                            >
+                                <Meta
+                                    title="Community manager"
+                                    description="Dijon - American Cars - EG Ferreteria"
                                 />
-                            }
-                            actions={[
-                                <Link onClick={Dijon}><InstagramOutlined /> Dijon</Link>,
-                                <Link onClick={American}><InstagramOutlined /> ACars</Link>,
-                                <Link onClick={Ferre}><InstagramOutlined /> EGF</Link>
-                            ]}
-                        >
-                            <Meta
-                                title="Community manager"
-                                description="Dijon - American Cars - EG Ferreteria"
-                            />
-                        </Card>
-                    </Row>
-                </FadeInSection>
-            </Content>
+                            </Card>
+                        </Row>
+                    </FadeInSection>
+                </Content>
+            </Mobile>
+            <Desktop>
+                <Content className="layoutAdmin__content" style={{ paddingLeft: 60, paddingRight: 60 }}>
+                    <FadeInSection>
+                        <Row gutter={16}>
+                            <Col span={12}>
+                                <Card
+                                    cover={
+                                        <img
+                                            alt="example"
+                                            src={cvImg}
+                                        />
+                                    }
+                                    actions={[
+                                        <Link to={cvFileEsp} target="_blank" download><DownloadOutlined /> Español</Link>,
+                                        <Link to={cvFileIng} target="_blank" download><DownloadOutlined /> Ingles</Link>
+                                    ]}
+                                >
+                                    <Meta
+                                        title="Mi Cv"
+                                        description=""
+                                    />
+                                </Card>
+                            </Col>
+                            <Col span={12}>
+                                <Card
+                                    cover={
+                                        <img
+                                            alt="example"
+                                            src={imgSillon}
+                                        />
+                                    }
+                                    actions={[
+                                        <Link onClick={Instagram}><InstagramOutlined /></Link>,
+                                        <Link onClick={Twitter}><TwitterOutlined /></Link>,
+                                        <Link onClick={LinkedIn}><LinkedinOutlined /></Link>
+                                    ]}
+                                >
+                                    <Meta
+                                        title="Redes sociales"
+                                        description=""
+                                    />
+                                </Card>
+                            </Col>
+                        </Row>
+                    </FadeInSection>
+                </Content>
+
+                <Content className="layoutAdmin__content" style={{ paddingLeft: 60, paddingRight: 60 }}>
+                    <FadeInSection>
+                        <Row gutter={16}>
+                            <Col span={12}>
+                                <Card
+                                    cover={
+                                        <img
+                                            alt="example"
+                                            src={kerde}
+                                        />
+                                    }
+                                    actions={[
+                                        <Link onClick={Kerde}>Kerde Labs <CodeOutlined /></Link>
+                                    ]}
+                                >
+                                    <Meta
+                                        title="Analista IT"
+                                        description="Kerde Labs"
+                                    />
+                                </Card>
+                            </Col>
+                            <Col span={12}>
+                                <Card
+                                    cover={
+                                        <img
+                                            alt="example"
+                                            src={marketing}
+                                        />
+                                    }
+                                    actions={[
+                                        <Link onClick={Dijon}><InstagramOutlined /> Dijon</Link>,
+                                        <Link onClick={American}><InstagramOutlined /> ACars</Link>,
+                                        <Link onClick={Ferre}><InstagramOutlined /> EGF</Link>
+                                    ]}
+                                >
+                                    <Meta
+                                        title="Community manager"
+                                        description="Dijon - American Cars - EG Ferreteria"
+                                    />
+                                </Card>
+                            </Col>
+                        </Row>
+                    </FadeInSection>
+                </Content>
+            </Desktop>
 
             {/* <FadeInSection>
-                <Carousel autoplay>
-                    <div className="carrusel">
-                        <img
-                            onClick={Spotify}
-                            alt="example"
-                            src={spotify}
-                        />
-                    </div>
-                    <div className="carrusel">
-                        <img
-                            onClick={Test}
-                            alt="example"
-                            src={test}
-                        />
-                    </div>
-                    <div className="carrusel">
-                        <img
-                            onClick={Discord}
-                            alt="example"
-                            src={discord}
-                        />
-                    </div>
-                </Carousel>
-            </FadeInSection> */}
+                    <Carousel autoplay>
+                        <div className="carrusel">
+                            <img
+                                onClick={Spotify}
+                                alt="example"
+                                src={spotify}
+                            />
+                        </div>
+                        <div className="carrusel">
+                            <img
+                                onClick={Test}
+                                alt="example"
+                                src={test}
+                            />
+                        </div>
+                        <div className="carrusel">
+                            <img
+                                onClick={Discord}
+                                alt="example"
+                                src={discord}
+                            />
+                        </div>
+                    </Carousel>
+                </FadeInSection> */}
             <Footer className="layoutAdmin__footer" style={{ textAlign: 'center' }}>Made with React ©2021 Created by Luka Brizzi a manopla
-                <div className="layoutAdmin__wpp" style={{ textAlign: 'right' }}>
+                    <div className="layoutAdmin__wpp" style={{ textAlign: 'right' }}>
                     <Avatar onClick={WhatsApp}
                         style={{
                             backgroundColor: avatarColor,
