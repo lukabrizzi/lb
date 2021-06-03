@@ -2,6 +2,7 @@ import React from 'react';
 import { MediaQuery, useMediaQuery } from 'react-responsive';
 import { Route, Switch, Link } from 'react-router-dom';
 import { Layout, Card, Col, Row, Avatar, Carousel, notification } from 'antd';
+import { Helmet } from 'react-helmet';
 import 'antd/dist/antd.css';
 import { DownloadOutlined, TwitterOutlined, InstagramOutlined, LinkedinOutlined, WhatsAppOutlined, CodeOutlined } from '@ant-design/icons';
 
@@ -108,7 +109,10 @@ export default function LayoutAdmin(props) {
 
     return (
         <Layout>
-            <Content className="layoutAdmin__content" style={{ paddingLeft: 60, paddingRight: 60 }}>
+            <Helmet>
+                <title>Luka Brizzi</title>
+            </Helmet>
+            <Content className="layoutAdmin__content" style={{ paddingLeft: 30, paddingRight: 30 }}>
                 <FadeInSection>
                     <div className="layoutAdmin__header" >
                         <img
@@ -119,7 +123,7 @@ export default function LayoutAdmin(props) {
                 </FadeInSection>
             </Content>
             <Mobile>
-                <Content className="layoutAdmin__content" style={{ paddingLeft: 60, paddingRight: 60 }}>
+                <Content className="layoutAdmin__content" style={{ paddingLeft: 30, paddingRight: 30 }}>
                     <FadeInSection>
                         <Row gutter={16}>
                             <Card
@@ -143,7 +147,7 @@ export default function LayoutAdmin(props) {
                     </FadeInSection>
                 </Content>
 
-                <Content className="layoutAdmin__content" style={{ paddingLeft: 60, paddingRight: 60 }}>
+                <Content className="layoutAdmin__content" style={{ paddingLeft: 30, paddingRight: 30 }}>
                     <FadeInSection>
                         <Row gutter={16}>
                             <Card
@@ -168,7 +172,7 @@ export default function LayoutAdmin(props) {
                     </FadeInSection>
                 </Content>
 
-                <Content className="layoutAdmin__content" style={{ paddingLeft: 60, paddingRight: 60 }}>
+                <Content className="layoutAdmin__content" style={{ paddingLeft: 30, paddingRight: 30 }}>
                     <FadeInSection>
                         <Row gutter={16}>
                             <Card
@@ -191,7 +195,7 @@ export default function LayoutAdmin(props) {
                     </FadeInSection>
                 </Content>
 
-                <Content className="layoutAdmin__content" style={{ paddingLeft: 60, paddingRight: 60 }}>
+                <Content className="layoutAdmin__content" style={{ paddingLeft: 30, paddingRight: 30 }}>
                     <FadeInSection>
                         <Row gutter={16}>
                             <Card
