@@ -134,7 +134,7 @@ export default function LayoutAdmin(props) {
                                     />
                                 }
                                 actions={[
-                                    <Link to={cvFileEsp} target="_blank" download><DownloadOutlined /> Español</Link>,
+                                    <Link to={cvFileEsp} target="_blank" download><DownloadOutlined /> Españool</Link>,
                                     <Link to={cvFileIng} target="_blank" download><DownloadOutlined /> Ingles</Link>
                                 ]}
                             >
