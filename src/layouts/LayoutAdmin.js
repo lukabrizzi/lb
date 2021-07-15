@@ -9,7 +9,7 @@ import { DownloadOutlined, TwitterOutlined, InstagramOutlined, LinkedinOutlined,
 import header from '../assets/img/png/presentacion.png'
 
 import cvImg from '../assets/img/png/cv.png'
-import cvFileEsp from '../assets/pdf/CVLuka Brizziespañol.pdf'
+import cvFileEsp from '../assets/pdf/CVLukaBrizziespañol.pdf'
 import cvFileIng from '../assets/pdf/CVLukaBrizziingles.pdf'
 import imgSillon from '../assets/img/png/labu.png'
 import kerde from '../assets/img/png/kerde.png'
