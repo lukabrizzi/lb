@@ -9,8 +9,8 @@ import { DownloadOutlined, TwitterOutlined, InstagramOutlined, LinkedinOutlined,
 import header from '../assets/img/png/presentacion.png'
 
 import cvImg from '../assets/img/png/cv.png'
-import cvFileEsp from '../assets/pdf/CV Luka Brizzi español.pdf'
-import cvFileIng from '../assets/pdf/CV Luka Brizzi ingles.pdf'
+import cvFileEsp from '../assets/pdf/CVLuka Brizziespañol.pdf'
+import cvFileIng from '../assets/pdf/CVLukaBrizziingles.pdf'
 import imgSillon from '../assets/img/png/labu.png'
 import kerde from '../assets/img/png/kerde.png'
 import marketing from '../assets/img/png/marketing.png'
@@ -339,7 +339,7 @@ export default function LayoutAdmin(props) {
                     </Carousel>
                 </FadeInSection> */}
             <Footer className="layoutAdmin__footer" style={{ textAlign: 'center' }}>Made with React ©2021 Created by Luka Brizzi a manopla
-                    <div className="layoutAdmin__wpp" style={{ textAlign: 'right' }}>
+                <div className="layoutAdmin__wpp" style={{ textAlign: 'right' }}>
                     <Avatar onClick={WhatsApp}
                         style={{
                             backgroundColor: avatarColor,
